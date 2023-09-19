@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors and mode designing</title>
+    <style>
+        .container{
+            border: 2px solid green;
+            background-color: silver;
+            padding: 50px;
+            margin: 50px auto;
+            width: 600px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: green;
+            zoom: 110%;
+            text-decoration: underline;
+            background-color: blue;
+        }
+        a:visited{
+            color: red;
+        }
+        a:active{
+            background-color: yellow;
+        }
+        .button{
+            background-color: solid grey;
+            padding : 6px;
+            border : both;
+            cursor : pointer;
+            font-size: 15px;
+            border-radius: 3px;
+        }
+        button:hover{
+            zoom : 110%; 
+        }        
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h2>this is my heading</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut blanditiis optio consequatur tempore quibusdam commodi repudiandae iure, voluptatem nostrum nihil quod dolore totam adipisci facilis beatae consequuntur. Consectetur, quo amet! Eaque placeat at ullam inventore enim harum quam, ratione rem.</p>
+    <a href="https://google.com" class= "button">Read more..</a>
+        <button class="button">Contact us..</button>
+</div>
+</body>
+</html>
