@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title> attribute and pseudo selectors</title>
+<style>
+    .container{
+        display: block;
+        margin: 34px 23px;
+        width: 33%;
+        border: 2px solid green;
+        
+    }
+    a[target]{
+        font-size: 32px;
+        color: blue;
+        text-decoration: dashed;
+    }
+    a[target = "_self"]{
+        font-size: 32px;
+        color: magenta;
+        text-decoration: dashed;
+    }
+    input[type = 'text']{
+        padding: 23px;
+        border: 2px solid red;
+        /* display: block; */
+    }
+    input[type = 'email']{
+        padding:32px;
+        border: 2px solid purple;
+        /* display: block; */
+    }
+    li:nth-child(2n+1){
+        color: goldenrod;
+    }
+    li:nth-child(3n+3){
+        color: purple;
+    }
+    li:nth-child(odd){
+        background-color: cyan;
+    }
+</style>
+</head>
+<body>
+    
+<div class="container">
+    <h1><a href="http://google.com" target="_blank">go to google</a></h1>
+    <h1><a href="https://instagram.com" target="_self">go to instagram</a></h1>
+    <form action="" class="form-control">
+        <input type="text" placeholder="enter your name ">
+        <input type="email" placeholder="enter your email..">
+        <input type="password" placeholder="enter your password">
+        <input type="submit" value="click to submit">
+    </form>
+    <ul>
+        <li class="item" id="item-1">item1</li>
+        <li class="item" id="item-2">item2</li>
+        <li class="item" id="item-3">item3</li>
+        <li class="item" id="item-4">item4</li>
+        <li class="item" id="item-5">item5</li>
+        <li class="item" id="item-6">item6</li>
+    </ul>
+</div>    
+</body>
+</html>
