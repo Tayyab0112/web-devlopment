@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid&media</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        @media (max-width:300px) {
+          body{
+              background-color: cyan;
+          }
+        }
+        @media (min-width: 300px) and (max-width : 600px) {
+          body{
+              background-color: purple;
+            }            
+            .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+
+        }
+        @media (min-width: 600px)  {
+          body{
+              background-color: red;
+          }            
+        }
+        .bdr{
+            border : 2px solid black;
+            padding: 23px;
+            background-color: wheat;
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            Home About Contact us
+        </nav>
+        <section class="bdr">
+            <h1>learn css in hindi</h1>
+        </section>
+        <aside class="bdr">
+            <h1>more about us</h1>
+        </aside>
+
+    </div>
+    <footer class="bdr">Copyright! code with tayyab 2023!!!</footer>
+</body>
+</html>
