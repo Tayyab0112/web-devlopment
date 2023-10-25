@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    padding: 0px 25px;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center ;
+    justify-content: space-between;
+    
+
+}
+#navpart1{
+    display: flex;
+    gap: 40px;
+    font-weight: 500;
+    width: 40%;
+}
+#navpart2{
+    display: flex;
+    gap :20px;
+    width: 40%;
+    justify-content: flex-end;
+    font-size: 20px;
+    
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    font-size: large;
+    border-radius: 20px  ;
+    background-color: black;
+    color: white;
+}
+#btn{
+    color: black;
+    background-color: white;
+    font-weight: 800;
+}
+#pink{
+    position: absolute;
+    font-size : 20px;
+    font-weight: 500;
+    top: 20%;
+    left: 35%;
+    background-color: pink;
+    padding: 30px 30px;
+    border-radius: 30px;
+}
+#main{
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    font-size: 50px;
+    text-align: center;
+    font-weight: lighter;
+}
+#hirebtn{
+    position: absolute;
+    top: 85%;
+    left: 43%;
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-size: 30px;
+
+}
